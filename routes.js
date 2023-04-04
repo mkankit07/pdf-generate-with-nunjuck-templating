@@ -30,8 +30,17 @@ exports.printpdf1 = function (req, res) {
         }
     };
     console.log(appmodule.env,"++++++++++++++++++++++++++==")
+        // nunjucks
+    // .configure("public", {
+    //     express: app,
+    //     autoescape: true,
+    // })
+    // .render("nunjucks.tmpl.html", {
+    //     obj,
+    // });
     var renderedHtml =  appmodule.env.render('nunjucks.tmpl.html',obj);
     console.log(renderedHtml,"/////////////////////")
+
     pdf.create(renderedHtml,report_options).toStream(function(err, stream){
         // console.log(stream);
         stream.pipe(res);
