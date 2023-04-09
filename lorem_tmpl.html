@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -28,4 +28,1105 @@
         Quisque tristique, risus vel finibus sodales, enim nibh gravida neque, sed dignissim nunc eros vitae metus. Nunc posuere tincidunt tortor, a interdum ligula feugiat eget. Morbi faucibus, sem non convallis sodales, dolor enim imperdiet dui, at sollicitudin felis risus sed eros. Phasellus ornare leo enim, in bibendum ipsum aliquam in. Etiam non lectus massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed a magna suscipit elit porttitor varius. Duis ultrices luctus dolor, pharetra suscipit eros laoreet nec. Aenean ut sagittis lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eleifend lectus metus, ut hendrerit sapien tempus eget.
     </div>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+                @import url("https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@100;300;600;400;500&display=swap");      
+
+                html,
+                body {
+                        margin: 0;
+                        padding: 0;
+                        width: 100%;
+                        height: 100%;
+                        font-family: 'Roboto', sans-serif;
+                }
+
+                p,
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                        margin: 0;
+                        padding: 0;
+                }
+
+                .header {
+                        text-align: center;
+                        margin-right: 20px;
+                        width: 100%;
+                        font-weight: 550;
+                        line-height: 2;
+                        color: #6d2727;
+                        font-size: 1.3rem;
+                }
+
+                .spelling-error {
+                        text-decoration-line: underline;
+                }
+
+                .table-content tr td:last-child {
+                        padding-right: 5px;
+                }
+
+                .site-logo {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        float: right;
+                }
+
+                .content,
+                .cover-report-info {
+                        text-align: center;
+                        line-height: 2;
+                }
+
+                .cover-name-of-university {
+                        padding-bottom: 15px;
+                }
+
+                .mt-90 {
+                        margin-top: 90px;
+                }
+
+                .content {
+                        font-size: 2rem;
+                }
+
+                .cover-report-info {
+                        margin-top: 20px;
+                        line-height: 2;
+                        font-weight: 300;
+                        font-size: 2rem;
+                }
+
+                .footer {
+                        position: fixed;
+                        bottom: 0;
+                        border-top: 2px dashed black;
+                        width: 100%;
+                        text-align: center;
+                        padding-top: 10px;
+                        line-height: 1.5;
+                        color: dodgerblue;
+                        font-size: 10pt;
+                        font-weight: bold;
+                }
+
+                .page {
+                        position: relative;
+                        padding: 20px;
+                        break-after: page;
+                        page-break-after: always;
+                }
+
+                /* Demographics */
+                .table {
+                        min-width: 100%;
+                        max-width: 100%;
+                }
+
+                .table-content {
+                        width: 100%;
+                        max-width: 100%;
+                        font-size: 12px;
+                        padding: 15px;
+                        line-height: 2;
+                }
+
+                table {
+                        border-collapse: collapse;
+                        text-align: center;
+                }
+
+                .bold {
+                        font-weight: bold;
+                }
+
+                .padding-20 {
+                        padding: 20px;
+                }
+
+                .text-right {
+                        text-align: right !important;
+                }
+
+                .bt-3 {
+                        border: 1px solid black;
+                }
+
+                .graph-content-container {
+                        border-top: 0;
+                        padding: 20px;
+                        width: 100%;
+                }
+
+                .graph-content-container td:first-child {
+                        padding-left: 10px;
+                }
+
+                .text-right {
+                        text-align: right !important;
+                }
+
+                .text-center {
+                        text-align: center;
+                }
+
+                .graph-content {
+                        display: inline;
+                }
+
+                #output {
+                        color: #474545;
+                        font-size: 18px;
+                        margin-left: 5px;
+                }
+
+                .graph-lable {
+        width: 30%;
+        font-size: 18px;
+        text-align: left;
+      }
+
+      .width-30 {
+        width: 30%;
+      }
+
+      .table-container {
+        border: 2px solid black;
+      }
+
+      .table-header {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+      }
+
+      .table-title {
+        text-align: center;
+        font-weight: bold;
+        padding-block: 4px;
+      }
+
+      .table-skill-container {
+        border: none !important;
+        border-bottom: 2px solid black !important;
+      }
+
+      .width-70 {
+        width: 40%;
+      }
+
+      #slider {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 19px !important;
+        width: calc(100% - 35px);
+        outline: none;
+        margin-top: 10px;
+        padding: 3px;
+        background: linear-gradient(
+          to right,
+          rgb(255, 127, 127) 0%,
+          rgb(255, 127, 127) 25%,
+          #fff06a 25%,
+          #fff06a 50%,
+          #66c266 50%,
+          #66c266 75%,
+          #ff8641 75%,
+          #ff8641 100%
+        );
+      }
+
+      #slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #b43838;
+        cursor: pointer;
+        border: 1px solid #6d2727;
+      }
+
+      #slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 10%;
+        background-color: #dbc500;
+        cursor: pointer;
+        border: 1px solid #f4f4f4;
+      }
+
+      .graph-content-container {
+        border-top: 0 !important;
+        padding: 20px;
+        width: 100%;
+      }
+
+      .graph-content-container td:first-child {
+        padding-left: 10px;
+      }
+
+      .graph-lable {
+        width: 30%;
+        font-size: 18px;
+        text-align: left;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .student-info {
+        font-size: 20px;
+        width: 100%;
+        /* padding-left: 50px; */
+        margin-top: 10px;
+        display: -webkit-box;
+        margin-bottom: 10px;
+      }
+
+      .absolute-lable {
+        margin-top: 0px;
+        font-size: 10px;
+        font-weight: bold;
+        gap: 15px;
+      }
+
+      .d-flex {
+        display: flex;
+        display: -webkit-box;
+      }
+
+      .gap-4 {
+        gap: 20px;
+      }
+
+      .p-inline-10 {
+        padding-right: 8px;
+      }
+
+      .pr-3 {
+        padding-right: 3px;
+      }
+
+      .mt-15 {
+        margin-top: 15px;
+      }
+
+      .mt-20 {
+        margin-top: 20px;
+      }
+
+      .site-logo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        float: right;
+      }
+
+      .mainskill {
+        margin-bottom: 10px;
+      }
+
+      .clr1 {
+        background-color: rgb(255, 127, 127);
+      }
+
+      .clr2 {
+        background-color: #fff06a;
+      }
+
+      .clr3 {
+        background-color: #66c266;
+      }
+
+      .clr4 {
+        background-color: #ff8641;
+      }
+
+      /*  */
+      .heading {
+        font-size: 20px !important;
+      }
+
+      .page-content {
+        font-size: 11px !important;
+      }
+
+      .sub-heading {
+        font-size: 18px !important;
+      }
+
+      .Standardized-Score {
+        font-weight: 600;
+        height: 100%;
+      }
+
+      .sample-color {
+        width: 15px;
+        height: 15px;
+        border-radius: 2px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="page1">
+        <div class="header">
+          <img
+            src="https://characterarc.org/wp-content/uploads/cropped-cropped-CA-Final-logo-small-size.png"
+            alt="site-logo Loading...."
+            width="130px"
+          />
+        </div>
+        <div class="content mt-90">
+          <div>Character Skills Assessment Score Report</div>
+          <div>for</div>
+          <div class="cover-student-id">0</div>
+          <div class="cover-name-of-university">Wilkes University</div>
+          <div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Wilkes_University_Seal_Blue.png"
+              alt="uni Logo"
+              width="110px"
+            />
+          </div>
+        </div>
+        <div class="cover-report-info">
+          <p>Prepared by:</p>
+          <p>Character Arc</p>
+          <p>Philadelphia, PA</p>
+          <div><a href="" class="mail-id">hello@characterarc.org</a></div>
+          <div>
+            <a href="www.characterarc.org" class="website-link"
+              >www.characterarc.org</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- New All Module -->
+
+    <div class="page">
+      <div class="header">
+        <div>Character Arc Undergraduate Assessment Results</div>
+        <div>Academic Achievement Module</div>
+        <img
+          src="https://characterarc.org/wp-content/uploads/cropped-cropped-CA-Final-logo-small-size.png"
+          alt="site-logo Loading...."
+          class="site-logo"
+          width="85px"
+        />
+      </div>
+      <div class="student-info">
+        <div style="width: 50%; padding-left: 10px">
+          Student ID : 0
+        </div>
+        <div style="width: 50%">University : Wilkes University</div>
+      </div>
+
+      <div class="table-container">
+        <div class="table-title" style="font-size: 24px; font-weight: 800">
+          Professional skills
+        </div>
+        <div class="table">
+          <div
+            class="table-header d-flex gap-4"
+            style="
+              font-size: 20px;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              font-weight: 600;
+            "
+          >
+            <div
+              class="width-70 text-right p-inline-10"
+              style="padding-top: 5px"
+            >
+              Skill and its components
+            </div>
+            <div
+              class="width-30 text-center p-inline-10"
+              style="padding-top: 5px"
+            >
+              Standardized Score
+            </div>
+            <div class="pr-3" style="text-align: center; width: 26%">
+              Personal Score <br />(Max = 10)
+            </div>
+          </div>
+
+
+          <div class="table-skill-container" style="font-size: 18px">
+            <div class="mainskill d-flex gap-4 mt-15">
+              <div class="Skill width-70 text-right p-inline-10">Grit</div>
+
+              <!-- yellow -->
+              <div
+                class="Standardized-Score width-30 text-center p-inline-10 clr2"
+              >
+                -0.459479
+              </div>
+
+              <div
+                class="Personal-Score width-30 p-inline-10"
+                style="width: 160px; text-align: center"
+              >
+                4.774
+              </div>
+
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+          </div>
+
+          <div class="table-skill-container" style="font-size: 18px">
+            <div class="mainskill d-flex gap-4 mt-15">
+              <div class="Skill width-70 text-right p-inline-10">Adaptability</div>
+
+              <!-- pink -->
+              <div
+                class="Standardized-Score width-30 text-center p-inline-10 clr1"
+              >
+                -1.65072
+              </div>
+
+
+              <div
+                class="Personal-Score width-30 p-inline-10"
+                style="width: 160px; text-align: center"
+              >
+                3.417
+              </div>
+
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+          </div>
+
+          <div class="table-skill-container" style="font-size: 18px">
+            <div class="mainskill d-flex gap-4 mt-15">
+              <div class="Skill width-70 text-right p-inline-10">Conscientiousness</div>
+
+              <!-- green -->
+              <div
+                class="Standardized-Score width-30 text-center p-inline-10 clr3"
+              >
+                0.634
+              </div>
+
+
+              <div
+                class="Personal-Score width-30 p-inline-10"
+                style="width: 160px; text-align: center"
+              >
+                6.417
+              </div>
+
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+          </div>
+
+          <div class="table-skill-container" style="font-size: 18px">
+            <div class="mainskill d-flex gap-4 mt-15">
+              <div class="Skill width-70 text-right p-inline-10">Self Motivation</div>
+
+              <!-- green -->
+              <div
+                class="Standardized-Score width-30 text-center p-inline-10 clr3"
+              >
+                0.234
+              </div>
+
+
+              <div
+                class="Personal-Score width-30 p-inline-10"
+                style="width: 160px; text-align: center"
+              >
+                5.036
+              </div>
+
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+          </div>
+
+          <div class="table-skill-container" style="font-size: 18px">
+            <div class="mainskill d-flex gap-4 mt-15">
+              <div class="Skill width-70 text-right p-inline-10">Collaboration</div>
+
+              <!-- yellow -->
+              <div
+                class="Standardized-Score width-30 text-center p-inline-10 clr2"
+              >
+                -0.334
+              </div>
+
+              <div
+                class="Personal-Score width-30 p-inline-10"
+                style="width: 160px; text-align: center"
+              >
+                3.75
+              </div>
+
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+          </div>
+
+          <div class="table-skill-container" style="font-size: 18px">
+            <div class="mainskill d-flex gap-4 mt-15">
+              <div class="Skill width-70 text-right p-inline-10">Metacognition</div>
+
+              <!-- yellow -->
+              <div
+                class="Standardized-Score width-30 text-center p-inline-10 clr2"
+              >
+                -0.139
+              </div>
+
+              <div
+                class="Personal-Score width-30 p-inline-10"
+                style="width: 160px; text-align: center"
+              >
+                5.5
+              </div>
+
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+          </div>
+
+          <div class="table-skill-container" style="font-size: 18px">
+            <div class="mainskill d-flex gap-4 mt-15">
+              <div class="Skill width-70 text-right p-inline-10">Independency</div>
+
+              <!-- pink -->
+              <div
+                class="Standardized-Score width-30 text-center p-inline-10 clr1"
+              >
+                -1.9083
+              </div>
+
+
+              <div
+                class="Personal-Score width-30 p-inline-10"
+                style="width: 160px; text-align: center"
+              >
+                3.33
+              </div>
+
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+          </div>
+
+          <div class="table-skill-container" style="font-size: 18px">
+            <div class="mainskill d-flex gap-4 mt-15">
+              <div class="Skill width-70 text-right p-inline-10">Internal Locus of Control</div>
+
+              <!-- yellow -->
+              <div
+                class="Standardized-Score width-30 text-center p-inline-10 clr2"
+              >
+                -0.928
+              </div>
+
+              <div
+                class="Personal-Score width-30 p-inline-10"
+                style="width: 160px; text-align: center"
+              >
+                5.357
+              </div>
+
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+          </div>
+
+          <div class="table-skill-container" style="font-size: 18px">
+            <div class="mainskill d-flex gap-4 mt-15">
+              <div class="Skill width-70 text-right p-inline-10">Initiative</div>
+
+              <!-- yellow -->
+              <div
+                class="Standardized-Score width-30 text-center p-inline-10 clr2"
+              >
+                -0.10029
+              </div>
+
+              <div
+                class="Personal-Score width-30 p-inline-10"
+                style="width: 160px; text-align: center"
+              >
+                5.357
+              </div>
+
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+          </div>
+
+          <div class="table-skill-container" style="font-size: 18px">
+            <div class="mainskill d-flex gap-4 mt-15">
+              <div class="Skill width-70 text-right p-inline-10">Curiosity</div>
+
+              <!-- yellow -->
+              <div
+                class="Standardized-Score width-30 text-center p-inline-10 clr2"
+              >
+                -0.86
+              </div>
+
+              <div
+                class="Personal-Score width-30 p-inline-10"
+                style="width: 160px; text-align: center"
+              >
+                4.5
+              </div>
+
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+            <div class="subskills d-flex gap-4">
+              <div class="Skill width-70 text-right p-inline-10">
+                Belief in one’s own inherent worth
+              </div>
+
+              <div class="Standardized-Score width-30 text-center p-inline-10">
+                ................
+              </div>
+            </div>
+          </div>
+
+          <table class="graph-content-container">
+            <tr class="gap-4">
+              <td class="graph-lable">
+                <span> Grit </span>
+              </td>
+              <td class="table3-cell text-start" colspan="2">
+
+                <div style="position: relative; padding: 0 20px">
+                  <input
+                    type="range"
+                    value="-0.459479"
+                    min="-3"
+                    max="3"
+                    step="0.001"
+                    id="slider"
+                    class="slider"
+                    style="width: 100%"
+                  />
+
+                  <span
+                    style="position: absolute;top: 0; font-size: 14px; font-weight: 800;  text-align: right;padding-top: 13px;left:46.342016666666666%"
+                  >
+                    -0.46</span
+                  >
+
+                </div>
+
+              </td>
+            </tr>
+          </table>
+
+          <table class="graph-content-container">
+            <tr class="gap-4">
+              <td class="graph-lable">
+                <span> Adaptability </span>
+              </td>
+              <td class="table3-cell text-start" colspan="2">
+
+                <div style="position: relative; padding: 0 20px">
+                  <input
+                    type="range"
+                    value="-1.65072"
+                    min="-3"
+                    max="3"
+                    step="0.001"
+                    id="slider"
+                    class="slider"
+                    style="width: 100%"
+                  />
+
+                  <span
+                    style="position: absolute;top: 0; font-size: 14px; font-weight: 800;  text-align: right;padding-top: 13px;left:28.488%" 
+                  >
+                    -1.65</span
+                  >
+
+                </div>
+
+              </td>
+            </tr>
+          </table>
+
+          <table class="graph-content-container">
+            <tr class="gap-4">
+              <td class="graph-lable">
+                <span> Conscientiousness </span>
+              </td>
+              <td class="table3-cell text-start" colspan="2">
+
+                <div style="position: relative; padding: 0 20px">
+                  <input
+                    type="range"
+                    value="0.634"
+                    min="-3"
+                    max="3"
+                    step="0.001"
+                    id="slider"
+                    class="slider"
+                    style="width: 100%"
+                  />
+
+                  <span
+                    style="position: absolute;top: 0; font-size: 14px; font-weight: 800;  text-align: right;padding-top: 13px;left:63.56666666666666%"
+                    >0.63</span
+                  >
+
+
+                </div>
+
+              </td>
+            </tr>
+          </table>
+
+          <table class="graph-content-container">
+            <tr class="gap-4">
+              <td class="graph-lable">
+                <span> Self Motivation </span>
+              </td>
+              <td class="table3-cell text-start" colspan="2">
+
+                <div style="position: relative; padding: 0 20px">
+                  <input
+                    type="range"
+                    value="0.234"
+                    min="-3"
+                    max="3"
+                    step="0.001"
+                    id="slider"
+                    class="slider"
+                    style="width: 100%"
+                  />
+
+                  <span
+                    style="position: absolute;top: 0; font-size: 14px; font-weight: 800;  text-align: right;padding-top: 13px;left:56.9%"   
+                    >0.23</span
+                  >
+
+
+                </div>
+
+              </td>
+            </tr>
+          </table>
+
+          <table class="graph-content-container">
+            <tr class="gap-4">
+              <td class="graph-lable">
+                <span> Collaboration </span>
+              </td>
+              <td class="table3-cell text-start" colspan="2">
+
+                <div style="position: relative; padding: 0 20px">
+                  <input
+                    type="range"
+                    value="-0.334"
+                    min="-3"
+                    max="3"
+                    step="0.001"
+                    id="slider"
+                    class="slider"
+                    style="width: 100%"
+                  />
+
+                  <span
+                    style="position: absolute;top: 0; font-size: 14px; font-weight: 800;  text-align: right;padding-top: 13px;left:48.43333333333333%"
+                  >
+                    -0.33</span
+                  >
+
+                </div>
+
+              </td>
+            </tr>
+          </table>
+
+          <table class="graph-content-container">
+            <tr class="gap-4">
+              <td class="graph-lable">
+                <span> Metacognition </span>
+              </td>
+              <td class="table3-cell text-start" colspan="2">
+
+                <div style="position: relative; padding: 0 20px">
+                  <input
+                    type="range"
+                    value="-0.139"
+                    min="-3"
+                    max="3"
+                    step="0.001"
+                    id="slider"
+                    class="slider"
+                    style="width: 100%"
+                  />
+
+                  <span
+                    style="position: absolute;top: 0; font-size: 14px; font-weight: 800;  text-align: right;padding-top: 13px;left:51.68333333333333%"
+                  >
+                    -0.14</span
+                  >
+
+                </div>
+
+              </td>
+            </tr>
+          </table>
+
+          <table class="graph-content-container">
+            <tr class="gap-4">
+              <td class="graph-lable">
+                <span> Independency </span>
+              </td>
+              <td class="table3-cell text-start" colspan="2">
+
+                <div style="position: relative; padding: 0 20px">
+                  <input
+                    type="range"
+                    value="-1.9083"
+                    min="-3"
+                    max="3"
+                    step="0.001"
+                    id="slider"
+                    class="slider"
+                    style="width: 100%"
+                  />
+
+                  <span
+                    style="position: absolute;top: 0; font-size: 14px; font-weight: 800;  text-align: right;padding-top: 13px;left:24.194999999999997%"
+                  >
+                    -1.91</span
+                  >
+
+                </div>
+
+              </td>
+            </tr>
+          </table>
+
+          <table class="graph-content-container">
+            <tr class="gap-4">
+              <td class="graph-lable">
+                <span> Internal Locus of Control </span>
+              </td>
+              <td class="table3-cell text-start" colspan="2">
+
+                <div style="position: relative; padding: 0 20px">
+                  <input
+                    type="range"
+                    value="-0.928"
+                    min="-3"
+                    max="3"
+                    step="0.001"
+                    id="slider"
+                    class="slider"
+                    style="width: 100%"
+                  />
+
+                  <span
+                    style="position: absolute;top: 0; font-size: 14px; font-weight: 800;  text-align: right;padding-top: 13px;left:38.53333333333334%"
+                  >
+                    -0.93</span
+                  >
+
+                </div>
+
+              </td>
+            </tr>
+          </table>
+
+          <table class="graph-content-container">
+            <tr class="gap-4">
+              <td class="graph-lable">
+                <span> Initiative </span>
+              </td>
+              <td class="table3-cell text-start" colspan="2">
+
+                <div style="position: relative; padding: 0 20px">
+
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
+
